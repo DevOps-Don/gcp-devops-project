@@ -3,3 +3,11 @@ steps:
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/gcpdevops','.']
 images:
 - 'gcr.io/$PROJECT_ID/gcpdevops'
+
+options:
+  logging: CLOUD_LOGGING_ONLY  # or NONE if you want to disable logging
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET  # Alternative approach if you have a regional bucket
+
+# Uncomment the following line if you want to specify an explicit logs bucket
+  logsBucket: "gs://gcp-devops-bucket-7654321"
+
