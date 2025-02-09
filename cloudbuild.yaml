@@ -10,4 +10,3 @@ options:
 
 # Uncomment the following line if you want to specify an explicit logs bucket
 #  logsBucket: "gs://gcp-devops-bucket-7654321"
-
