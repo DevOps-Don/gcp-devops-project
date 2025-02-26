@@ -4,4 +4,5 @@ steps:
 images:
 - 'gcr.io/$PROJECT_ID/gcpdevops'
 
-# Minor change to trigger build. Blah, blah, blah.
+options:
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
